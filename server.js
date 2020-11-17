@@ -3,11 +3,7 @@ const app = express();
 const mongoose = require("mongoose");
 const shortId=require("shortid");
 
-// mongoose.connect("mongodb:localhost:3000/urlShortner",{
-//     useNewUrlParser: true,
-//     useUnifiedTopology:true
-// })
-// mongo "mongodb+srv://cluster0.nypaz.mongodb.net/<dbname>" --username admin-Mukul
+
 mongoose.connect('mongodb+srv://admin-Mukul:mukul@25@cluster0.nypaz.mongodb.net/UrlShortner', {useNewUrlParser: true, useUnifiedTopology: true})
     .then(() => console.log('MongoDB Connected...'))
     .catch((err) => console.log(err))
